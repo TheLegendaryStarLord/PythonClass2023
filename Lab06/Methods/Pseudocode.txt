@@ -1,0 +1,14 @@
+function find_int(int_list, target_value)
+    # Initialize a variable to store the index of the target value
+    index = -1
+
+    # Iterate through the list using a loop
+    for i from 0 to length(int_list) - 1
+        # Check if the current element is equal to the target value
+        if int_list[i] == target_value
+            # If found, update the index variable and exit the loop
+            index = i
+            exit loop
+
+    # Return the index where the value was found or -1 if not found
+    return index

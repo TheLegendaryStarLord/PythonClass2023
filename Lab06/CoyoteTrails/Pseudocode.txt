@@ -1,0 +1,50 @@
+Import MethodCoyote
+
+# Create lists for tour information
+tour_codes = [1001, 1002, 1003, 1004, 1005, 1006]
+destinations = ["Destination1", "Destination2", "Destination3", "Destination4", "Destination5", "Destination6"]
+costPerPersons = [50.00, 60.00, 70.00, 80.00, 90.00, 100.00]
+
+Function main():
+    # Ask the user for a tour code and the number of people
+    tour_code = Input("Enter a tour code number: ")
+    number_of_people = Input("Enter the number of people: ")
+
+    # Try to find the tour code in the list
+    index = MethodCoyote.find_int(tour_codes, tour_code)
+
+    If index != -1:
+        # If found, get the destination and cost per person
+        destination = destinations[index]
+        cost_per_person = costPerPersons[index]
+
+        # Calculate the total price
+        total_price = cost_per_person * number_of_people
+
+        # Display the tour details
+        Output("Destination: " + destination)
+        Output("Cost per person: " + cost_per_person)
+        Output("Number of persons: " + number_of_people)
+        Output("Total price: " + total_price)
+    Else:
+        # If tour code not found, display an error message
+        Output("NOT FOUND")
+        Output("Cost per person: $0.00")
+
+
+##MethodCoyote.py##
+
+function find_int(int_list, target_value)
+    # Initialize a variable to store the index of the target value
+    index = -1
+
+    # Iterate through the list using a loop
+    for i from 0 to length(int_list) - 1
+        # Check if the current element is equal to the target value
+        if int_list[i] == target_value
+            # If found, update the index variable and exit the loop
+            index = i
+            exit loop
+
+    # Return the index where the value was found or -1 if not found
+    return index
