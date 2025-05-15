@@ -1,0 +1,35 @@
+Lab 05 - ex 2 program a dice game using loops and arrays
+
+rollTypes = {Junk, pair, 3 of a kind, 4 of a kind, 5 of a kind}
+
+#Dice Roll#
+
+for i = 0 to 4
+	roll pdice[i] for player
+	roll cDice[i] for computer
+	display pDice[i] and cDice[i]
+end for 
+
+#Tally dice roll#
+
+while i < maxRolls
+	pTally { pDice[i] - 1}++
+	cTally { cDice[i] - 1}++
+end while
+
+#find high roll combination (rollTypes)#
+
+pMax = pTally[0]
+cMax = cTally[0]
+
+i = 1
+while i < maxDiceVal
+	if pMax < pTally[i] then
+		pMax = pTally[i]
+	end if
+
+	if cMax < cTally[i] then
+		cMax = cTally[i]
+	end if
+	i += 1
+end while

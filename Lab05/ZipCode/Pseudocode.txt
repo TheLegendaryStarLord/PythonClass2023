@@ -1,0 +1,33 @@
+Lab 05 - Ex1 zip code checker using arrays and loops
+
+#input#
+
+Get zipCode
+
+#initialize#
+
+init zipCodes
+init cities
+init states
+i = 0
+found = false
+
+#loop#
+
+if (i < zipCodes.length) and (Not Found) = True
+
+	if zipCode = zipCodes[i] = false
+		i = i + 1
+		Reloop
+
+	if zipCode = zipCodes[i] = True
+		city = cities[i]
+		state = states[i]
+		found = true
+		reloop
+
+if (i < zipCodes.length) and (Not Found) = false
+	
+	#display#
+	show city
+	show state

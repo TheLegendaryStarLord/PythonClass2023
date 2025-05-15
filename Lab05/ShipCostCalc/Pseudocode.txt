@@ -1,0 +1,48 @@
+#Define zip codes, corresponding cities, and shipping prices#
+
+zips = [92020, 91901, 92040, 91976, 92071]
+cities = ["El Cajon", "Alpine", "Lakeside", "Spring Valley", "Santee"]
+expressPrice = [5.00, 10.00, 7.00, 6.00, 7.00]
+groundPrice = [3.00, 5.00, 4.00, 3.00, 4.00]
+
+#Initialize variables#
+zipCode = 00000
+city = "Unknown"
+price = 0.00
+found = False
+i = 0
+listLength = length(zips)  # Get the length of the zip codes list
+shipChoice = "Undefined"
+
+# Input: Get the user's zip code
+zipCode = input("Please enter the zip code: ")
+
+#Search for the zip code in the list#
+
+while i < listLength and not found:
+    if zipCode == zips[i]:
+        city = cities[i]
+        found = True
+    i = i + 1
+
+#Check if the zip code was not found#
+
+if not found:
+    print("Zip code not found")
+else:
+    # Input: Get the user's choice of shipping method
+    shipChoice = input("Please enter \"Express\" or \"Ground\" for your choice of shipping: ").lower()
+    
+    # Reset the index for a new search
+    i = 0
+    
+    # Determine the shipping price based on the user's choice
+    if shipChoice == "express":
+        price = expressPrice[i]
+    elif shipChoice == "ground":
+        price = groundPrice[i]
+    else:
+        print("Shipping method invalid")
+
+#Output the result#
+print("Zip: " + str(zipCode) + "   City: " + city + "  Shipping method: " + str(shipChoice) + "  Price: " + str(price))

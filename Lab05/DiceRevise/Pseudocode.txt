@@ -1,0 +1,91 @@
+# Initialize variables
+maxRolls = 5
+maxDiceValue = 6
+totalPlayerScore = 0
+totalComputerScore = 0
+
+# Define roll types and initialize lists for dice rolls and tally
+rollTypes = ["Junk", "Pair", "3 of a kind", "4 of a kind", "5 of a kind"]
+pDice = [0, 0, 0, 0, 0]
+cDice = [0, 0, 0, 0, 0]
+pTally = [0, 0, 0, 0, 0, 0]
+cTally = [0, 0, 0, 0, 0, 0]
+
+# Input: Get the number of rounds to play
+maxRounds = input("Please input how many rounds of this game you would like to play: ")
+
+# Repeat the game for each round
+rounds = 0
+while rounds < maxRounds:
+    # Roll dice for both player and computer
+    i = 0
+    while i < maxRolls:
+        pDice[i] = random.randint(1, maxDiceValue)
+        cDice[i] = random.randint(1, maxDiceValue)
+        i += 1
+
+    # Display player and computer rolls
+    i = 0
+    print("The Player Rolled: ", end=" ")
+    while i < maxRolls:
+        print(pDice[i], end=" ")
+        i += 1
+
+    i = 0
+    print("\nThe Computer Rolled: ", end=" ")
+    while i < maxRolls:
+        print(cDice[i], end=" ")
+        i += 1
+
+    # Tally dice rolls to determine roll types
+    i = 0
+    while i < maxRolls:
+        pTally[pDice[i] - 1] += 1
+        cTally[cDice[i] - 1] += 1
+        i += 1
+
+    # Determine the roll type with the most occurrences for both player and computer
+    pMax = pTally[0]
+    cMax = cTally[0]
+    i = 1
+    while i < maxDiceValue:
+        if pMax < pTally[i]:
+            pMax = pTally[i]
+        if cMax < cTally[i]:
+            cMax = cTally[i]
+        i += 1
+
+    # Output the roll types
+    print("\nPlayer Rolled: " + rollTypes[pMax - 1])
+    print("Computer Rolled: " + rollTypes[cMax - 1])
+
+    # Determine the winner of the round and update scores
+    if pMax > cMax:
+        print("Player Wins Round " + str(rounds + 1) + "!\n")
+        totalPlayerScore += 1
+    elif cMax > pMax:
+        print("Computer Wins Round " + str(rounds + 1) + "!\n")
+        totalComputerScore += 1
+    else:
+        print("Tie! No one wins round " + str(rounds + 1) + "...\n")
+
+    rounds += 1  # Increment the round counter
+
+    # Reset dice and tally for the next round
+    pDice = [0, 0, 0, 0, 0]
+    cDice = [0, 0, 0, 0, 0]
+    pTally = [0, 0, 0, 0, 0, 0]
+    cTally = [0, 0, 0, 0, 0, 0]
+
+# Determine the overall winner of the game
+if totalPlayerScore > totalComputerScore:
+    print("The player wins the game!!")
+elif totalComputerScore > totalPlayerScore:
+    print("The computer wins the game!!")
+else:
+    print("Tie. No one wins....")
+
+# Output the final scores
+print("The Score is:")
+print("Player: " + str(totalPlayerScore) + " Rounds")
+print("Computer: " + str(totalComputerScore) + " Rounds")
