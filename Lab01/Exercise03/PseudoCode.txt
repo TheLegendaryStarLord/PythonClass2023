@@ -1,0 +1,16 @@
+Lab 01 - Ex 3 Convert Miles to KM
+
+PseudoCode:
+
+##declare variable##
+(User Input)
+	Get Miles
+MilesPerKM = 0.62
+
+##Process equation##
+
+KM = Miles divided by MilesPerKM
+
+##Display output##
+
+Show Miles

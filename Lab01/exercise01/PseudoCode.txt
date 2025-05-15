@@ -1,0 +1,16 @@
+Lab 01 - Ex1 Multiply 2 numbers
+
+pseudocode: 
+
+# input #
+(User input)
+	obtain number1
+	obtain number2
+
+# process #
+
+Product = number1 * number2
+
+# output #
+
+Show Product
