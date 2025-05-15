@@ -1,0 +1,40 @@
+1. Prompt the user to input a list of numbers separated by spaces
+   Input: numInput
+   
+2. Split the input string into a list of strings
+   numListString = split numInput by spaces
+
+3. Convert the list of strings to a list of integers
+   numList = convert each element in numListString to an integer
+
+4. Call the sort_integers function to sort the list of integers in descending order
+   sort_integers(numList)
+
+5. Convert the sorted list of integers to an array
+   sortedArray = create an array using the 'i' type code with elements from numList
+
+6. Convert the elements of the array to strings and join them with spaces
+   resultString = join the elements of sortedArray with spaces after converting each to a string
+
+7. Display the sorted numbers in a single line
+   print resultString
+
+Procedure sort_integers(numList):
+    Input: numList (a list of integers)
+
+    1. Get the size of the input list
+       size = length of numList
+
+    2. Iterate over the elements of the list using an outer loop (i)
+       for i in range from 0 to size - 2:
+       
+        3. Iterate over the elements of the list using an inner loop (j)
+           for j in range from 0 to size - i - 2:
+
+            4. Compare adjacent elements (numList[j] and numList[j+1])
+               if numList[j] < numList[j+1]:
+
+                5. Swap the values if they are in the wrong order
+                   Swap numList[j] and numList[j+1]
+
+    Output: numList (the input list is modified in place, sorted in descending order)

@@ -1,0 +1,43 @@
+1. Import the required modules
+   Import array module
+   Import functions from calcSort module
+
+2. Initialize two arrays (numList1 and numList2) with integer values
+
+3. Display the mean for each number list
+   a. Calculate mean for numList1 using calc_mean function
+   b. Calculate mean for numList2 using calc_mean function
+   c. Display the mean values with appropriate labels
+
+4. Display the median for each number list
+   a. Calculate median for numList1 using calc_median function
+   b. Calculate median for numList2 using calc_median function
+   c. Display the median values with appropriate labels
+
+Procedure calc_mean(numList):
+    Input: numList (a list of integers)
+    
+    1. Set sumValue to 0
+    2. For each element x in numList:
+        a. Add x to sumValue
+    3. Calculate the mean:
+        a. mean = sumValue / length of numList
+    4. Convert mean to a string and store it in display
+    5. Return display
+
+Procedure calc_median(numList):
+    Input: numList (a list of integers)
+
+    1. Get the length of numList and store it in size
+    2. Implement a bubble sort to sort numList in descending order
+        a. For i in range from 0 to size - 2:
+            i. For j in range from 0 to size - i - 2:
+                a. If numList[j] < numList[j + 1], swap the elements
+    3. Determine the median:
+        a. If size is odd:
+            i. Set median to the middle element: numList[size // 2]
+        b. If size is even:
+            i. Set median to the average of the two middle elements:
+                (numList[size // 2 - 1] + numList[size // 2]) / 2
+    4. Convert median to a string and store it in display
+    5. Return display
