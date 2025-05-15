@@ -1,0 +1,19 @@
+Lab 03 - Ex2 Calculate the BMI based on Input
+
+# Input
+	Get Height in Inches
+	Get Weight in Pounds
+
+# Calculate Formula
+	meters = Inches / 39.37 
+	kilograms = Pounds / 2.2
+
+	bmi = kilograms / Meters^2
+
+# Bmi If/else Output
+	if BMI is less than 18.5 Show "Underweight"
+	if BMI is less than 25 Show "Normal weight"
+	if BMI is less than 30 Show "Overweight"
+	if BMI is less than 35 Show "Obesity (Class 1)"
+	if BMI is less than 40 Show "Obesity (Class 2)"
+	if BMI is over 40 Show "Morbid Obesity"

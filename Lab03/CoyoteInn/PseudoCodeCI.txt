@@ -1,0 +1,16 @@
+Lab 03 - Ex3 estimate charges based on month of the year
+
+# Input 
+	Get Month Number
+	
+//Personal touch
+	if Month Number is 1 to 12 then the input is valid
+	else the Month Number is invalid and needs to be redone
+# Months If/Else Tree
+	if Months is Jan(1) to Mar(3) then PricePerNight is $80
+	if Months is Apr(4) to Jun(6) then PricePerNight is $90
+	if Months is Jul(7) to Sep(9) then PricePerNight is $120
+	if Months is Oct(10) to Dec(12) then PricePerNight is $100
+
+# Display
+	Show PricePerNight

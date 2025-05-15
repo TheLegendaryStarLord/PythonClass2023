@@ -1,0 +1,27 @@
+Lab 03 - Ex1 Calculate the price of a portait based on number of subjects and day of the week
+
+# Input #
+	Get Last Name
+	Get Number Of Subjects
+	Get Day of the Week
+
+# Calculate decision
+
+SURCHARGE_PCT = 1.2
+
+	## Number of Subjects decision##
+		If Number of Subjects is 1 then Base-Price is 100
+		Else If Number of Subjects is 2 then Base-Price is 130
+		Else If Number of Subjects is 3 then Base-Price is 150
+		Else If Number of Subjects is 4 then Base-Price is 165
+		Else If Number of Subjects is 5 then Base-Price is 175
+		Else If Number of Subjects is 6 then Base-Price is 180
+		Else Number of Subjects is 7 then Base-Price is 185
+	## Day of the Week Deal ##
+		If Days of the week is Sunday / Day 7 then (Base Price = Base Price * SURCHARGE_PCT)
+		Else If Days of the Week is Monday / Day 1 then (Base Price = Base Price * SURCHARGE_PCT)
+		Else Do Nothing
+		//Or Just
+		End If
+# Display
+	Display Base Price
