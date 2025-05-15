@@ -1,0 +1,37 @@
+Lab 04 - Calculate the investment growth
+
+# Variable Declaration #
+Monthly_amt = 0
+years = 0
+AnnIntRate = 0.0
+MonIntRate = 0.0
+fv = 0.0
+months = 0
+month_num = 1
+
+# msg with python format specifiers
+msg = "Month: {0:3d} FV: ${1:.2f} Interest: ${2:.2f}"
+interest = 0.0
+tot_interest = 0.0
+
+# User Input #
+	Get MonthlyAmount
+	Get AnnIntRate
+	Get NumOfYears
+
+#Process#
+	monthlyIntRate = annIntRate / 100 / 12
+	months = years * 12
+
+#Loop#
+	While month_num <= months
+		
+	
+	
+	
+	month_num += 1 #LoopControlVariable
+
+#Display#
+	Show Month_num
+	Show fv
+	Show interest

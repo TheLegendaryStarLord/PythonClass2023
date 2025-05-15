@@ -1,0 +1,21 @@
+Lab 04 - Calculate the investment growth
+
+# Variables #
+MaxFlips = 20
+maxVal = 2
+heads = 0.0
+tails = 0.0
+pctTails = 0.0
+pctHeads = 0.0
+i = 0
+flip = 0
+
+# loop #
+	flip coin
+	show results
+
+# display #
+	count total heads
+	display total heads
+	count total tails
+	display total tails
