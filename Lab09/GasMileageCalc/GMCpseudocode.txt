@@ -1,0 +1,38 @@
+Start
+    Initialize GUI window (frm) with title "Find your MPG" and size 450x200
+    
+    Create labels, entry fields, and buttons in the GUI window:
+        - Label(lblMiles) for miles driven input
+        - Entry field(txtMiles) for miles driven input
+        - Label(lblGallons) for gallons purchased input
+        - Entry field(txtGallons) for gallons purchased input
+        - Label(lblCostPerGal) for cost per gallon input
+        - Entry field(txtCostPerGal) for cost per gallon input
+        - Label(lblTextMPG) to display "Your MPG is:"
+        - Label(lblMPG) to display the calculated MPG
+        - Label(lblTextTotFuel) to display "Total Fuel Cost:"
+        - Label(lbltotFuel) to display the calculated total fuel cost
+        - Label(lblTextCPM) to display "Cost per Mile:"
+        - Label(lblCPM) to display the calculated cost per mile
+        - Button(btnCalc) with text "Calculate" linked to calc_mileage function
+        - Button(btnExit) with text "Exit" linked to exit_program function
+
+    Define function calc_mileage:
+        - Get miles driven from txtMiles
+        - Get gallons purchased from txtGallons
+        - Get cost per gallon from txtCostPerGal
+        
+        - Calculate MPG using the formula: MPG = miles / gallons
+        - Calculate total fuel cost using the formula: total_fuel_cost = gallons * cost_per_gal
+        - Calculate cost per mile using the formula: cost_per_mile = total_fuel_cost / miles
+        
+        - Update str_mpg with the formatted MPG value
+        - Update str_tot_fuel_cost with the formatted total fuel cost
+        - Update str_cpm with the formatted cost per mile
+        
+    Define function exit_program:
+        - Destroy the GUI window (frm) to exit the program
+
+    Start the GUI main loop (frm.mainloop())
+
+End

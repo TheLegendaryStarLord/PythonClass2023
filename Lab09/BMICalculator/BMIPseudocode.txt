@@ -1,0 +1,26 @@
+Start
+    Initialize GUI window (frm) with title "Find your BMI" and size 450x250
+    
+    Create labels, entry fields, and buttons in the GUI window:
+        - Label(lblKilo) for weight input
+        - Entry field(txtKilo) for weight input
+        - Label(lblmeters) for height input
+        - Entry field(txtmeters) for height input
+        - Label(lblTextBMI) to display "Your BMI is:"
+        - Label(lblBMI) to display the calculated BMI
+        - Button(btnCalc) with text "Calculate" linked to calc_mileage function
+        - Button(btnExit) with text "Exit" linked to exit_program function
+
+    Define function calc_mileage:
+        - Get weight in kilograms from txtKilo
+        - Get height in meters from txtmeters
+        
+        - Calculate BMI using the formula: BMI = weight / height^2
+        - Update str_bmi with the formatted BMI value
+        
+    Define function exit_program:
+        - Destroy the GUI window (frm) to exit the program
+
+    Start the GUI main loop (frm.mainloop())
+
+End

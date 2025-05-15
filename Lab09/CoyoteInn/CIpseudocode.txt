@@ -1,0 +1,33 @@
+Start
+    Initialize GUI window (frm) with title "Coyote Inn - Nightly Charges" and size 400x200
+    
+    Create labels, entry fields, and buttons in the GUI window:
+        - Label(lblMonth) for month input
+        - Entry field(txtMonth) for month input
+        - Label(lblNights) for number of nights input
+        - Entry field(txtNights) for number of nights input
+        - Label(lblTextTotal) to display "Total Charges:"
+        - Label(lblTotal) to display the calculated total charges
+        - Button(btnCalc) with text "Calculate" linked to calc_charges function
+        - Button(btnExit) with text "Exit" linked to exit_program function
+
+    Define function calc_charges:
+        - Get month from txtMonth
+        - Get number of nights from txtNights
+        
+        - Determine nightly rate based on the month:
+            - If month is between 1 and 3, nightly_rate is 80
+            - If month is between 4 and 6, nightly_rate is 90
+            - If month is between 7 and 9, nightly_rate is 120
+            - If month is between 10 and 12, nightly_rate is 100
+            - If month is invalid, set nightly_rate to 0 and show an error message
+        
+        - Calculate total charges using the formula: total_charges = nights * nightly_rate
+        - Update str_total_charges with the formatted total charges
+
+    Define function exit_program:
+        - Destroy the GUI window (frm) to exit the program
+
+    Start the GUI main loop (frm.mainloop())
+
+End
