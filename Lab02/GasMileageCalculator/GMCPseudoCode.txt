@@ -1,0 +1,16 @@
+Lab 02 - Ex2 Calculate the gas mileage using user input
+
+## Get user input to get data for Variables ##
+	get Gallons
+	get Miles Driven
+	get Cost per Gallon
+
+## Use Equations to calculate for MPG, Total Fuel Cost, and Cost Per Mile ##
+	mpg = milesDriven / gallons
+	totalFuelCost = gallons * costPerGallon;
+	costPerMile = totalFuelCost / milesDriven;
+
+## Display ##
+	show MPG
+	show Total Fuel Cost
+	show Cost Per Fuel

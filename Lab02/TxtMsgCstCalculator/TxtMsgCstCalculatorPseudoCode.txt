@@ -1,0 +1,12 @@
+Lab 02 - Ex1 Calculate the cost of text messages for the month
+
+## Get user input to get data for the number of texts for the month ##
+	Get Number of Texts
+
+## Use Equations to calculate for Cost Per Message, Total Sales ##
+	CostPerMsg = (NmberOfTxts * MsgCost);
+	TotalSale = (CostPerMsg * tax) + CostPerMsg;
+
+## Display ##
+	show Cost Per Message
+	show Total Sale

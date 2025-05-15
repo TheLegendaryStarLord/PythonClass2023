@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "GasMileageCalculator", "GasMileageCalculator.pyproj", "{9927EE8E-AEDD-402D-BF0E-51D5ACFFD608}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9927EE8E-AEDD-402D-BF0E-51D5ACFFD608}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9927EE8E-AEDD-402D-BF0E-51D5ACFFD608}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {941B11A8-4391-4494-8DA4-8C9FF0B1292C}
+	EndGlobalSection
+EndGlobal
